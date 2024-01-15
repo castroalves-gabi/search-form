@@ -1,0 +1,50 @@
+<DOCTYPE!>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Search Form</title>
+    <link rel="stylesheet" href="styles.css"
+  <head>
+  <body>
+    <h1 id="title">Search Form</h1>
+    <p id="description">Made by Gabrieli Alves in <a href="https://www.freecodecamp.org/portuguese/learn/2022/responsive-web-design/build-a-survey-form-project/build-a-survey-form"> Free Code Camp project challenge</a>.</p>
+    <form id="survey-form" method="post" action='https://register-demo.freecodecamp.org'>
+      <fieldset>
+        <label for="name" id="name-label">Enter your name: <input id="name" type="text" placeholder="Your Name" required /></label>
+        <label for="email" id="email-label">Enter your e-mail: <input id="email" type="email" placeholder="email@example.com" required /></label>      
+        <label for="number"id="number-label">Enter your age: <input id="number" type="number" min="18" max="129" placeholder="18" required /></label>
+      </fieldset>
+      <fieldset>
+        <label for="dropdown">Select: 
+          <select id="dropdown">
+            <option disabled selected value>Select an option</option>
+            <option value="1">Option 1</option>
+            <option value="2">Option 2>
+          </select>
+        </label>
+      </fieldset>
+      <fieldset>
+        <legend>Radio option</legend>
+        <label for="radio-1"><input id="radio-1" type="radio" name="radio" class="inline" value="radio-1"/> Radio option 1</label>
+        <label for="radio-2"><input id="radio-2" type="radio" name="radio" class="inline" value="radio-2"/> Radio option 2</label>
+      </fieldset>
+      <fieldset>
+        <legend>Checkbox</legend>
+        <label for="checkbox">
+          <input type="checkbox" id="checkbox-1" name="checkbox-1" value="1-marked"/> Checkbox 1
+          <input type="checkbox" id="checkbox-2" name="checkbox-2" value="2-marked"/> Checkbox 2
+        </label>
+        </fieldset>
+        <fieldset>
+          <legend>Provide a bio</legend>
+          <label for="text-area">
+          <textarea id="text-area" name="text-area" rows="3" cols="60" placeholder="Say something..."></textarea>
+        </label>
+      </fieldset>
+      <label class="terms-label" for="terms-and-conditions" >
+        <input value="terms" class="inline" id="terms-and-conditions" type="checkbox" required name="terms-and-conditions" /> I accept the <a href="https://www.freecodecamp.org/news/terms-of-service/">terms and conditions</a>
+      </label>
+      <input type="submit" id="submit" value="Submit" />
+    </form>
+  </body>
+</html>
